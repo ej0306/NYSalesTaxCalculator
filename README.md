@@ -11,10 +11,10 @@ Features
     Dynamic Calculation: You can calculate tax for individual items without adding them to the list.
 
 ## Screenshots
-![Screenshot 2024-09-30 164821](https://github.com/user-attachments/assets/3ee294ba-04fe-45d1-904e-85ad553cef39)
-![Screenshot 2024-09-30 165208](https://github.com/user-attachments/assets/6e86c72b-b924-4952-94d5-838d815e9b86)
-![Screenshot 2024-09-30 165139](https://github.com/user-attachments/assets/3e290d81-a981-4242-b5bc-958528f77168)
-![Screenshot 2024-09-30 165037](https://github.com/user-attachments/assets/8696f7ec-dc7e-4ecd-ae6c-595f67563bf7)
+https://github.com/ej0306/NYSalesTaxCalculator/blob/master/release/images/NYSTC1.png
+https://github.com/ej0306/NYSalesTaxCalculator/blob/master/release/images/NYSTC4.png
+https://github.com/ej0306/NYSalesTaxCalculator/blob/master/release/images/NYSTC3.png
+https://github.com/ej0306/NYSalesTaxCalculator/blob/master/release/images/NYSTC2.png
 
 ## Technologies Use
 
