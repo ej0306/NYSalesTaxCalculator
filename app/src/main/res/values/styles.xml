@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme -->
+    <style name="Theme.SalesTaxCalculator" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here -->
+        <item name="colorPrimary">@color/blue_500</item>
+        <item name="colorPrimaryDark">@color/blue_700</item>
+        <item name="colorAccent">@color/teal_200</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.App.Body1</item>
+        <item name="textAppearanceButton">@style/TextAppearance.App.Button</item>
+    </style>
+
+    <!-- Custom Text Appearances -->
+    <style name="TextAppearance.App.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextAppearance.App.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:textSize">14sp</item>
+    </style>
+</resources>

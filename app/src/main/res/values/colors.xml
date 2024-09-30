@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Blue color palette -->
+    <color name="blue_500">#3498db</color>  <!-- Light blue (similar to #3498db) -->
+    <color name="blue_600">#2c82c9</color>  <!-- Medium blue -->
+    <color name="blue_700">#217dbb</color>  <!-- Dark blue -->
+    <color name="blue_800">#1b6fa9</color>  <!-- Darker blue -->
+
+    <!-- Teal colors (used as accent colors) -->
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
+
+    <!-- Primary color -->
+    <color name="colorPrimary">#3498db</color> <!-- Light blue for primary color -->
+    <!-- Darker version of the primary color -->
+    <color name="colorPrimaryDark">#217dbb</color> <!-- Dark blue for darker primary -->
+    <!-- Accent color -->
+    <color name="colorAccent">#03DAC5</color> <!-- Teal as accent color -->
+
+    <!-- White and black -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>

@@ -1,0 +1,154 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- CardView to display the result -->
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/resultCardView"
+            android:layout_width="354dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="50dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="NY Sales Tax Calculator"
+                android:textAppearance="?attr/textAppearanceHeadline6" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- RecyclerView for displaying added items with limited height -->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/itemsRecyclerView"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp" />
+
+        <!-- LinearLayout for Item Name and Item Price fields side by side -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="8dp">
+
+            <!-- TextInputLayout for Item Name -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutItemName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Enter item name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/itemName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Spacer between the two fields -->
+            <Space
+                android:layout_width="8dp"
+                android:layout_height="wrap_content" />
+
+            <!-- TextInputLayout for Item Price -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutItemPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Enter item price">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/itemPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <!-- Spinner for County Selection -->
+        <Spinner
+            android:id="@+id/countySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp" />
+
+        <!-- Spinner for Item Type Selection -->
+        <Spinner
+            android:id="@+id/itemTypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp" />
+
+        <!-- LinearLayout to position Add Item and Clear All buttons side by side -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <!-- Button to Add the Item -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/addItemButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Add Item"
+                android:layout_marginEnd="8dp"/>
+
+            <!-- Button to Clear All Items -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/clearButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="Clear All"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <!-- Button to Calculate Total -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/calculateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Calculate Total with Tax"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/bottomImageView"
+            android:layout_width="match_parent"
+            android:layout_height="198dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/nysaleslogo" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
